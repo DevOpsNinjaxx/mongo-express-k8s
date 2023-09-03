@@ -6,8 +6,8 @@
 4. Deploy your stateful mongodb set with 3 replicas `mongodb-deploy.yaml`. Ensure all 3 pods are running
 5. ssh or exec into your mongo-0 pod and initiate the replica set follow instructions below
 
-   kubectl exec -it mongo-0 -- mongosh
-   rs.initiate()
+   kubectl exec -it mongo-0 -- mongosh \
+   rs.initiate() \
    var cfg = rs.conf()
    cfg.members[0].host="mongo-0.mongo:27017"
    rs.reconfig(cfg)
