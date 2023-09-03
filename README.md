@@ -20,13 +20,13 @@
 7. Make the following changes to your web-app.yaml Under container env change ME_CONFIG_MONGODB_SERVER to ME_CONFIG_MONGODB_URL
 
 ie **Make sure to Change** 
- - name: ME_CONFIG_MONGODB_SERVER
-          valueFrom:
-            configMapKeyRef:
-              name: mongodb-configmap
+ - name: ME_CONFIG_MONGODB_SERVER \
+          valueFrom: \
+            configMapKeyRef: \
+              name: mongodb-configmap \
               key: database_host
    to
-- name: ME_CONFIG_MONGODB_URL
+- name: ME_CONFIG_MONGODB_URL \
   value: mongodb://mongo-0.mongo,mongo-1.mongo,mongo-2.mongo:27017/?replicaSet=rs0
   
    **Make sure you remove value from config map**
