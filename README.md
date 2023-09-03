@@ -13,7 +13,7 @@
    rs.reconfig(cfg) \
    rs.status() \
    rs.add("mongo-1.mongo:27017") \
-   rs.add("mongo-2.mongo:27017") \
+   rs.add("mongo-2.mongo:27017")
 
    **Make sure you can see all replicasets sync and healthy**
    
