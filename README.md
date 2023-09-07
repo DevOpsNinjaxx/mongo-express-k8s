@@ -31,5 +31,5 @@ ie **Make sure to Change**
   
    **Make sure you remove value from config map**
 
-9. Deploy your web-app.yaml
-10. Deploy your ingress controller and access your application using ingress
+9. Deploy your `web-app.yaml`
+10. Deploy your ingress controller by apply `ingress.yaml` and access your application using ingress
