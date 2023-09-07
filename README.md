@@ -3,7 +3,7 @@
 1. Start Your kubernetes cluster
 2. Deploy your secrets `mongo-secret.yaml`
 3. Deploy your headless service for stateful set `headless-service.yaml`
-4. Deploy your stateful mongodb set with 3 replicas `mongodb-deploy.yaml`. Ensure all 3 pods are running
+4. Deploy your stateful mongodb set with 3 replicas `mongodb-statefulset.yaml`. Ensure all 3 pods are running
 5. ssh or exec into your mongo-0 pod and initiate the replica set follow instructions below
 
    kubectl exec -it mongo-0 -- mongosh \
