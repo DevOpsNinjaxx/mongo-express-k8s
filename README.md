@@ -1,4 +1,4 @@
-# Deploy Express application with Mongo Express frontend and Mongodb database 
+# Deploy Express application with Mongo Express app and Mongodb database 
 
 1. Start Your kubernetes cluster
 2. Deploy your secrets `mongo-secret.yaml`
